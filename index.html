@@ -10,25 +10,27 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
   <body>
-    <nav class="w-screen flex justify-between px-9 py-4 bg-white">
-      <div class="w-32 cursor-pointer">LOGO</div>
+    <nav class="flex justify-between w-screen py-4 bg-white px-9">
+      <div class="w-32 cursor-pointer">CraftHub</div>
 
       <div class="space-x-4 font-medium">
-        <a href="#" class="">Courses</a>
-        <a href="#" class="">Pricing</a>
-        <a href="#" class="">Login</a>
-        <a href="#" class="px-4 py-2 bg-blue-400 text-white"
+        <a href="#" class="hover:text-blue-400">Courses</a>
+        <a href="#" class="hover:text-blue-400">Pricing</a>
+        <a href="#" class="hover:text-blue-400">Login</a>
+        <a href="#" class="px-4 py-2 text-white bg-blue-500 hover:bg-blue-400"
           >Start free trial</a
         >
       </div>
     </nav>
 
     <section
-      class="darken grid justify-center gap-8 px-32 py-24 text-center text-white bg-cover"
+      class="grid justify-center gap-8 px-32 py-24 text-center text-white bg-cover darken"
       style="
         background-image: url(https://cdna.artstation.com/p/assets/images/images/069/175/174/large/loic-liok-bramoulle-final-her-first-flight-to-rio.jpg?1699501071);
       "
     >
+      <!-- Artwork by: loïc [Liok] bramoullé -->
+      <!-- https://www.artstation.com/liok -->
       <h1 class="text-5xl font-bold">
         Creative skills that <br />pay the bills.
       </h1>
@@ -36,42 +38,41 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
         temporibus facilis, labore ullam cumque ipsum magni suscipit, eaque vel,
         quam animi eius doloribus? Quaerat, consequuntur ullam? Sed natus esse
-        quia explicabo eum iusto libero, id, error dolorum asperiores impedit
-        nam?
+        quia explicabo eum iusto libero, id
       </p>
-      <button class="place-self-center px-6 py-4 max-w-max border border-white text-sm bg-transparent">
+      <button class="px-6 py-4 text-sm bg-transparent border border-white rounded-md place-self-center max-w-max hover:bg-blue-500 hover:border-transparent ">
         EXPLORE COURSES
       </button>
     </section>
 
-    <section class="grid grid-cols-2 px-16 py-24">
+    <section class="grid grid-cols-2 px-16 py-24 bg-gray-50">
       <div class="relative justify-self-stretch" data-carousel>
-        <button class="absolute z-10 text-lg top-1/2 bg-white " data-carousel-button>&#8677</button>
+        <button class="absolute right-0 z-10 p-4 text-xl -translate-y-1/2 bg-white top-1/2 " data-carousel-button>&#8677</button>
         <ul data-slides class="text-white">
           <li 
-            class="slide text-3xl font-bold p-4 place shadow-lg shadow-black w-full h-full bg-cover bg-top" 
+            class="w-full h-full p-4 text-3xl font-bold bg-top bg-cover shadow-lg slide place shadow-black" 
             style="background-image: url(https://cdna.artstation.com/p/assets/images/images/069/184/658/large/maksim-croprender2.jpg?1699527795);" 
             data-active
-          >Creature Design</li>
+          ><div class="absolute bottom-4">Creature Design</div></li>
           <li 
-            class="slide text-3xl font-bold p-4 place shadow-lg shadow-black w-full h-full bg-cover"
+            class="w-full h-full p-4 text-3xl font-bold bg-cover shadow-lg slide place shadow-black"
             style="background-image: url(https://cdna.artstation.com/p/assets/images/images/069/180/908/large/joshua-jay-cherisch-09-01.jpg?1699520474);"
-          >Dynamic Concept Art</li>
+          ><div class="absolute bottom-4">Dynamic Concept Art</div></li>
           <li 
-            class="slide text-3xl font-bold p-4 place shadow-lg shadow-black w-full h-full bg-cover"
+            class="w-full h-full p-4 text-3xl font-bold bg-cover shadow-lg slide place shadow-black"
             style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/003/792/519/large/jaime-jasso-stormwind-01s.jpg?1477520955);"
-          >3D Matte Painting</li>
+          ><div class="absolute bottom-4">3D Matte Painting</div></li>
         </ul>
       </div>
-      <div class="py-24 px-12">
+      <div class="px-12 py-24">
         <h1 class="text-3xl font-bold">Our new courses</h1>
-        <p class="text-sm mt-2 mb-6">
+        <p class="mt-2 mb-6 text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, et.
           Laboriosam amet odio aliquam, possimus repellendus quisquam sint
           dignissimos nostrum eius, ut, assumenda deleniti perspiciatis autem
           recusandae
         </p>
-        <a href="#">VIEW ALL COURSES</a>
+        <a class="text-blue-400 hover:text-blue-300" href="#">VIEW ALL COURSES</a>
       </div>
 
     </section>
@@ -84,10 +85,10 @@
         natus eum iure nobis cum maxime explicabo! Aperiam.
       </p>
       <div
-        class="grid grid-cols-2 grid-rows-3 gap-5 h-screen my-8 text-white font-bold"
+        class="grid h-screen grid-cols-2 grid-rows-3 gap-5 my-8 font-bold text-white"
       >
         <div
-          class="px-8 py-6 text-lg col-span-2 row-span-2 shadow-md bg-cover bg-center"
+          class="col-span-2 row-span-2 px-8 py-6 text-lg bg-center bg-cover shadow-md cursor-pointer"
           style="
             background-image: url(https://cdna.artstation.com/p/assets/images/images/044/809/292/large/pixoloid-studios-station11-y20-zen-garden-pixoloid-final-highres.jpg?1641223464);
           "
@@ -97,7 +98,7 @@
           <h1>Intermediate</h1>
         </div>
         <div
-          class="px-8 py-6 text-lg darken shadow-md bg-cover bg-center"
+          class="px-8 py-6 text-lg bg-center bg-cover shadow-md cursor-pointer darken"
           style="
             background-image: url(https://cdna.artstation.com/p/assets/images/images/068/744/014/large/joseph-tandiman-env-2.jpg?1698553891);
           "
@@ -107,7 +108,7 @@
           <h1>Beginner</h1>
         </div>
         <div
-          class="px-8 py-6 text-lg shadow-md bg-cover bg-center"
+          class="px-8 py-6 text-lg bg-center bg-cover shadow-md cursor-pointer"
           style="
             background-image: url(https://cdnb.artstation.com/p/assets/images/images/068/602/097/medium/one-pixel-brush-ggl-10-staples-center-v4-new.jpg?1698222448);
           "
