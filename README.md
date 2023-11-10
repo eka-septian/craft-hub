@@ -30,7 +30,8 @@ Ini adalah sebuah hipotesis kursus online website untuk para kreatif yang ingin 
 ## Hasil
 ![carousel](./imgs/carousel.gif)
 
-Disini saya menambahkan beberapa ***data-attribute*** sebagai ekstra informasi agar nanti bisa dipanggil di ***Javascript***
+Disini saya menambahkan beberapa ***data-attribute*** sebagai ekstra informasi untuk pemanggilan element di ***Javascript***
+
 ## Implementasi mengganti slide dengan click event
 ```js
 const btn = document.querySelector("[data-carousel-button]");
